@@ -93,7 +93,7 @@ label {
 }
 
 input[type="password"] {
-  width: 100%;
+  width: 400px; 
   padding: 12px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
