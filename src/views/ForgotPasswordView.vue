@@ -4,7 +4,7 @@
 
     <form @submit.prevent="handleSubmit">
       <label for="email">Email:</label>
-      <input v-model="emailInput" type="email" id="email" placeholder="Kérlek írd be az email címed" required />
+      <input v-model="emailInput" type="email" id="email" placeholder="Kérlek írd be az emailcímed" required />
 
       <button type="submit" :disabled="isLoading">
         {{ isLoading ? 'Küldés...' : 'Helyreállító küldése' }}
@@ -82,7 +82,7 @@ label {
 }
 
 input[type="email"] {
-  width: 400px; /* Change this to a fixed width */
+  width: 100%;
   padding: 12px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
@@ -99,8 +99,7 @@ input[type="email"]:focus {
 }
 
 button {
-  width: 100%; /* Change this to a fixed width */
-  max-width: 300px; /* Add a max-width */
+  width: 100%;
   padding: 12px;
   background-color: #8746ef;
   color: white;
